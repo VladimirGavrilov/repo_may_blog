@@ -7,10 +7,10 @@
          content="Старинная  деревня Вяз Псковской области by
                  туристические маршруты, музей 'Истоки', исторические достопримечательности."/>
      
-      
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">  
 	 
-    <!--link rel="stylesheet" type="text/css" href="mayStyle/mayStyle.css"/-->
-    <!--script type="text/javascript"  src=" "> </script-->
+    <link rel="stylesheet" type="text/css" href="mayStyle/mayStyle.css"/>
+    <script type="text/javascript"  src="scr/jquery-2.1.4.js"> </script>
     <!--script type="text/javascript"  src=" "> </script-->
     <title>Мой первый блог</title> 
   </head>
@@ -20,17 +20,17 @@
 	<div>
 	
 		<h1>Мой блог</h1>
-			<div>
+			<div class="article">
 				<h3>заголовок</h3>
 					<span><em>опубликовано :15.09.2015</em></span>
 					<p>статья статья</p>			
 			</div>
-			<div>
+			<div class="article">
 				<h3>заголовок</h3>
 					<span><em>опубликовано :15.09.2015</em></span>
 					<p>статья статья</p>			
 			</div>
-			<div>
+			<div class="article">
 				<h3>заголовок</h3>
 					<span><em>опубликовано :15.09.2015</em></span>
 					<p>статья статья</p>			
