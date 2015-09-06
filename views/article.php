@@ -11,9 +11,9 @@
    <div class="container">
    	<h1>Мой блог</h1>
    	<div>
-	   	<h3><? =$article['title']?></h3>
-	   	<em>Опубликовано: <?php =$article['date'] ?></em>
-   		<p><?php $article['content']?></p>
+	   	<h3><?=$article['title']?></h3>
+	   	<em>Опубликовано: <?=$article['date'] ?></em>
+   		<p><?$article['content']?></p>
    	</div>
    	<footer><p>Мой блог<dr>Copyright &copy; 2015</p></footer>
    </div>
