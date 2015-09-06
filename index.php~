@@ -15,7 +15,10 @@
     <title>Мой первый блог</title> 
   </head>
 <body>
-
+	<?php ?
+		echo time();	
+	
+	?>
 
 	<div class="container">
 	
