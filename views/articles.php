@@ -11,11 +11,13 @@
  <body>
    <div class="container">
    	<h1>Мой блог</h1>
-   	<div>
-	   	<h3><? =$article['content']?></h3>
-	   	<em>Опубликовано: <?php =$article['date'] ?></em>
-   		<p><?php $article['content']?></p>
+   	<?php foreach($article as $a  ):?>
+   	<div class="article">   		
+	   	<h3><a href="article.php?id= <?php $a['id']= ?>"><? =$a['title']?></a></h3>
+	   	<em>Опубликовано: <?php =$a['date'] ?></em>
+   		<p><?php $a['content']?></p>
    	</div>
+   	<?php endforeach ?>
    	<footer><p>Мой блог<dr>Copyright &copy; 2015</p></footer>
    </div>
  </body>
