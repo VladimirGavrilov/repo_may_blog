@@ -3,6 +3,8 @@
 	require_once("models/articles.php");
 	
 	$articles = articles_get($_GET['id']);
+ 
 	
-	include("view/article.php");
+	require_once("views/article.php");
+	 
 ?>
