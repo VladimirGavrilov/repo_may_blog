@@ -11,7 +11,7 @@
    <div class="container">
    	<h1>Мой блог</h1>
    	<div>
-	   	<h3><? =$article['content']?></h3>
+	   	<h3><? =$article['title']?></h3>
 	   	<em>Опубликовано: <?php =$article['date'] ?></em>
    		<p><?php $article['content']?></p>
    	</div>
