@@ -10,7 +10,7 @@
 		return $arr;
 	}
 	function articles_get($id){
-		return ["id"=>1, "title"=>"Просто заголовок", "date"=>"25-01-01", "content"=>"Здесь статья"];
+		return ["id"=>$id, "title"=>"Просто заголовок", "date"=>"25-01-01", "content"=>"Здесь статья"];
 	}
 	function articles_edit($id, $title, $date, $content){
 		
