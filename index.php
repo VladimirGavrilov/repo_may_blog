@@ -4,7 +4,7 @@
 	
 	$articles = articles_all();
 	
-	require_once("views/articles.php");
+	require_once("views/articles_view.php");
     
 	 
 ?>
