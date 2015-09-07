@@ -1,9 +1,10 @@
 <?php
 	require_once("database.php");
 	require_once("models/articles.php");
-	
-	$articles = articles_all();
-	require_once("views/articles.php");
-   var_dump($articles);
+	$link = db_connect();
+	$articles = articles_all($link);
+	var_dump($articles);
+	require_once("views/articles_view.php");
+    
 	 
 ?>
