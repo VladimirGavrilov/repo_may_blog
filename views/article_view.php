@@ -5,15 +5,15 @@
     <link rel="stylesheet" type="text/css" href=""/>
     <script type="text/javascript"  src=""></script>
      
-  <title>Мой  блог  </title>
+  <title>Мо   </title>
   </head>
  <body>
 	<div class="container">
-		<h1>Мой блог</h1>
+		<h1>Моя статья</h1>
 		<div>
-			<h3><?=$articles['title']." №".$articles['id']?></h3>
-			<em>Опубликовано: <?=$articles['date']?> </em>
-			<p><?=$articles['content']?></p>
+			<h3><?=$article['title']." №".$article['id']?></h3>
+			<em>Опубликовано: <?=$article['date']?> </em>
+			<p><?=$article['content']?></p>
 		</div>
 		<footer>
 			<p>Мой блог<br>Copyright &copy; 2015</p>
