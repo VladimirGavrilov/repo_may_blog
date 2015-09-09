@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Admin Panel"
+AuthUserFile /var/www/html/blog/repo_may_blog.git/admin/.htpasswd
+Require valid-user
