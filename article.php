@@ -4,6 +4,8 @@
 	$link = db_connect();
 	
 	$article = articles_get($link, $_GET['id']);
+	//получаем иллюстрации к статье
+	$images = image_get($link, $_GET['id']);
 	
 	//подключаем вид	
 	require_once("views/article_view.php");

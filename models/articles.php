@@ -3,8 +3,10 @@
 	function articles_all($link){
 		 
 		//Запрос к базе
-		$query = "SELECT * FROM articles ORDER BY id DESC";		 
+		$query = "SELECT * FROM articles ORDER BY id DESC";	
+			 
 		$result = mysqli_query($link, $query);
+		
  		 
 		if(!$result) die(mysqli_error($link));
 		//извление из бд
@@ -14,11 +16,12 @@
 		
 		for($i = 0; $i < $n; $i++) {
 			$row = mysqli_fetch_assoc($result);
-			
+			$src = image_get($link, $row['id']);
+			$row['src'] = $src;
 			$articles[] = $row;
 		
 		}
-		 return $articles;
+		return $articles;
 	}
 	function articles_get($link, $id_article){
 		//Запрос к базе
@@ -35,7 +38,7 @@
 			$row = mysqli_fetch_assoc($result);
 			
 			$article = $row;
-		
+			
 		}
 		 return $article;
 		
@@ -53,5 +56,27 @@
 	function articles_del($id) {
 		
 	}
+	function image_get($link, $id_article){
+	//Запрос к базе
+		$query = "SELECT src_image, alt_image FROM images WHERE  id = $id_article ";	
+			 
+		$result = mysqli_query($link, $query);
+		
+ 		 
+		if(!$result) die(mysqli_error($link));
+		//извление из бд
+		$n = mysqli_num_rows($result);
+		
+		$images = array();
+		
+		for($i = 0; $i < $n; $i++) {
+			$row = mysqli_fetch_assoc($result);
+			
+			$images[] = $row;
+		
+		}
+		 return $images;
+	}
+		
 	
 ?>
