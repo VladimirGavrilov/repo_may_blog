@@ -16,20 +16,12 @@
 		
 		for($i = 0; $i < $n; $i++) {
 			$row = mysqli_fetch_assoc($result);
-			
+			$src = image_get($link, $row['id']);
+			$row['src'] = $src;
 			$articles[] = $row;
 		
 		}
-		$images = array();
-		 foreach($articles as $i){
-			$src = image_get($link, $i['id']);
-			$images[] = $src;
-				 
-		 };
-		 $articles[] = $images;
-		 
-		var_dump($articles[3]);
-		 return $articles;
+		return $articles;
 	}
 	function articles_get($link, $id_article){
 		//Запрос к базе
@@ -66,7 +58,7 @@
 	}
 	function image_get($link, $id_article){
 	//Запрос к базе
-		$query = "SELECT * FROM images WHERE  id = $id_article ";	
+		$query = "SELECT src_image, alt_image FROM images WHERE  id = $id_article ";	
 			 
 		$result = mysqli_query($link, $query);
 		
