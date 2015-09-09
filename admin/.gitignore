@@ -1,0 +1,5 @@
+*.htpasswd~
+*.htpasswd
+*.htacces~
+*.htaccess
+*.htacces
