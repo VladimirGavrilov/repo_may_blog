@@ -17,7 +17,7 @@
 			<p><?=$article['content']?></p>
 		</div>
 		<footer>
-			<p>Мой блог<br><a href="index.php">Все статьи</a><br>Copyright &copy; 2015</p>
+			<p>Мой блог<br><a href="../index.php">Все статьи</a><br>Copyright &copy; 2015</p>
 		</footer>
    </div>
  </body>

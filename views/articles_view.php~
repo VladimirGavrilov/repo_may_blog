@@ -22,7 +22,7 @@
    		<p><?=$a['content']?></p>
    	</div>
    	<?php endforeach ?> 
-   	<footer><p>Мой блог <br><a href="index.php">Все статьи</a><br>Copyright &copy; 2015</p>
+   	<footer><p>Мой блог <br><a href="../index.php">Все статьи</a><br>Copyright &copy; 2015</p>
    	
    	</footer>
    </div>
